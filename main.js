@@ -2,12 +2,13 @@ var fs = require('fs');
 var pdf = require('html-pdf');
 var html = fs.readFileSync('index.html', 'utf8');
 var options = {
-    format: "Letter",
+    format: 'Letter',
     orientation: "portrait",
-    base: "file:///home/psc/Code/jamcards/"
-};
+    base: "file://"+process.cwd()+"/",
+    zoomFactor: 0.2
+}
 
-pdf.create(html, options).toFile('./jam2.pdf', function(err, res) {
+pdf.create(html, options).toFile('./jam.pdf', function(err, res) {
   if (err) return console.log(err);
-  console.log(res); // { filename: '/app/businesscard.pdf' }
+  console.log(res);
 });
