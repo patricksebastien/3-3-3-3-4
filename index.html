@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="utf8">
-    <title>SuitArt Business Card</title>
+    <title>Jamming</title>
     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
     <script src="jquery-3.4.1.min.js"></script>
     <style>
@@ -14,6 +14,7 @@
         background: rgb(255,255,255);
         -webkit-print-color-adjust: exact;
         box-sizing: border-box;
+        
       }
 
       .carddeck {
@@ -24,7 +25,7 @@
         page-break-after: auto;
         margin: 0px;
         overflow: hidden;
-        background: url(https://source.unsplash.com/collection/190727/1600x900); 
+        background-color: grey;
       }
       
       .page.first {
@@ -57,6 +58,12 @@
         left: 10%;
         top: 15%;
       }
+
+
+      .BPM {
+        background: url(https://images.unsplash.com/photo-1567425804692-70a154bc2b8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9); 
+      }
+
 
       .BPM div {
         font-size: 68px;
@@ -94,7 +101,7 @@
    -webkit-text-stroke: 1px black;
    color: white;
    text-shadow:
-       2px 2px 0 #000,
+       3px 3px 0 #000,
      -1px -1px 0 #000,  
       1px -1px 0 #000,
       -1px 1px 0 #000,
@@ -111,14 +118,11 @@
 
           var data={
                       "BPM":[ "66.6", "70", "80", "90", "95", "100", "105", "110", "120", "130", "140", "150", "160", "180", "Random" ],
-                      "FEELZ": ["Cumbia", "Dub", "90's Acid Jazz", "Techno", "Acid", "Nouvelle planète", "Pleins pouvoirs", "Dark wave", "Deep deep house", "Drone", "Ambient", "Le soleil se lève", "Hard"],
-                      "INSTRUMENT":[ "80", "110", "140" ],
-                      "bpmf":[ "80", "110", "140", "80", "110", "140" ],
-                      "bpmg":[ "80", "110", "140" ],
-                      "feelzg": ["groove", "session"],
-                      "bpme":[ "80", "110", "140" ],
-                      "bpmq":[ "80", "110", "140", "80", "110", "140" ],
-                      "bpm3":[ "80", "110", "140" ],
+                      "Length":[ "5<br />min", "10<br />min", "15<br />min", "20<br />min", "25<br />min", "30<br />min", "As you<br />wish"],
+                      "Feelz": ["Cumbia", "Dub", "90's Acid Jazz", "Techno", "Acid", "Nouvelle planète", "Pleins pouvoirs", "Dark wave", "Deep deep house", "Drone", "Ambient", "Le soleil se lève", "Hard"],
+                      "Progression<br />&<br />scale":[ "III - IV - V", "110", "140" ],
+                      "Bars<br />&<br />Tempo": ["Half BPM", "As BPM", "Double BPM", "As you wish", "1 bar", "2 bars", "4 bars"],
+                      "Instrument":[ "PAD", "Brass", "Bass", "Keyboard", "Mono lead", "String", "80's synth", "Pluck", "Organ", "Sub-bass", "Aciiid!", "Marimba" ],
                       "feelz4": ["groove", "session", "fdsfds"],
                       "bpmd6":[ "80", "110", "140" ],
                       "bpmf7":[ "80", "110", "140", "80", "110", "140" ],
@@ -127,6 +131,9 @@
                       "bpme0":[ "80", "110", "140" ],
                       "bpmq1":[ "80", "110", "140", "80", "110", "140" ],
                     }
+
+
+
 
           var i = 0;
           var top = 0;
