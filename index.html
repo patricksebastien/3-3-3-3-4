@@ -3,6 +3,7 @@
     <meta charset="utf8">
     <title>SuitArt Business Card</title>
     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <script src="jquery-3.4.1.min.js"></script>
     <style>
       html, body {
         margin: 0;
@@ -14,80 +15,18 @@
         -webkit-print-color-adjust: exact;
         box-sizing: border-box;
       }
-      
-      .page1 {
-        border: 2px solid black;
-        position: absolute;
-        left: 0mm;
-        top: 0mm;
-        height: 4.25in;
-        width: 3in;
-        display: block;
-        page-break-after: auto;
-        margin: 0px;
-        overflow: hidden;
-        background: url(https://source.unsplash.com/collection/190727/1600x900) no-repeat center center fixed; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-      }
 
-      .page2 {
-        border: 2px solid black;
+      .carddeck {
         position: absolute;
-        left: 3.25in;
-        top: 0mm;
         height: 4.25in;
         width: 3in;
         display: block;
         page-break-after: auto;
         margin: 0px;
         overflow: hidden;
-        background: url(https://source.unsplash.com/collection/190727/1600x900) no-repeat center center fixed; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-      }
-
-      .page3 {
-        border: 2px solid black;
-        position: absolute;
-        left: 0mm;
-        top: 4.5in;
-        height: 4.25in;
-        width: 3in;
-        display: block;
-        page-break-after: auto;
-        margin: 0px;
-        overflow: hidden;
-        background: url(https://source.unsplash.com/collection/190727/1600x900) no-repeat center center fixed; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-      }
-
-      .page4 {
-        border: 2px solid black;
-        position: absolute;
-        left: 3.25in;
-        top: 4.5in;
-        height: 4.25in;
-        width: 3in;
-        display: block;
-        page-break-after: auto;
-        margin: 0px;
-        overflow: hidden;
-        background: url(https://source.unsplash.com/collection/175083/1600x900) no-repeat center center fixed; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
+        background: url(https://source.unsplash.com/collection/190727/1600x900); 
       }
       
-
       .page.first {
         border-left: 5px solid green;
       }
@@ -122,49 +61,57 @@
     </style>
   </head>
   <body>
-    <div class="page1">
-      <div class="bottom">
-        <div class="line" style="font-size: 40px">Instrument</div>
-        <div class="line">cto</div>
+        <script>
+        $( document ).ready(function() {
 
-        <div class="group">
-          <div class="line">p: +41 00 000 00 00</div>
-          <div class="line">github: marcbachmann</div>
-        </div>
-        <div class="group">
-          <div class="line">suitart ag</div>
-          <div class="line">räffelstrasse 25</div>
-          <div class="line">8045 zürich</div>
-        </div>
-      </div>
-    </div>
-    <div class="page2">
-      
-      <div class="bottom">
-          <div class="line center">8045 zürich</div>
-      </div>
-    </div>
+          var data={
+                      "bpm":[ "80", "110", "140" ],
+                      "feelz": ["groove", "session", "fdsfds"],
+                      "bpmd":[ "80", "110", "140" ],
+                      "bpmf":[ "80", "110", "140", "80", "110", "140" ],
+                      "bpmg":[ "80", "110", "140" ],
+                      "feelzg": ["groove", "session"],
+                      "bpme":[ "80", "110", "140" ],
+                      "bpmq":[ "80", "110", "140", "80", "110", "140" ],
+                      "bpm3":[ "80", "110", "140" ],
+                      "feelz4": ["groove", "session", "fdsfds"],
+                      "bpmd6":[ "80", "110", "140" ],
+                      "bpmf7":[ "80", "110", "140", "80", "110", "140" ],
+                      "bpmg8":[ "80", "110", "140" ],
+                      "feelzg9": ["groove", "session"],
+                      "bpme0":[ "80", "110", "140" ],
+                      "bpmq1":[ "80", "110", "140", "80", "110", "140" ],
+                    }
 
-    <div class="page3">
-        <div class="bottom">
-          <div class="line" style="font-size: 40px">Instrument</div>
-          <div class="line">cto</div>
-  
-          <div class="group">
-            <div class="line">p: +41 00 000 00 00</div>
-            <div class="line">github: marcbachmann</div>
-          </div>
-          <div class="group">
-            <div class="line">suitart ag</div>
-            <div class="line">räffelstrasse 25</div>
-            <div class="line">8045 zürich</div>
-          </div>
-        </div>
-      </div>
-      <div class="page4">
-        <div class="bottom">
-            <div class="line center">8045 zürich</div>
-        </div>
-      </div>
+          var i = 0;
+          var top = 0;
+
+          $.each( data, function( key, val ) {
+              console.log(key + " - " + val);
+
+              $.each( val, function( keyv, valv ) {
+                  if(i ==0) {
+                    top += 0;
+                  } else {
+                    top += 5.11; 
+                  }
+                  i++;
+                  $( "<div>", {
+                  "class": "carddeck",
+                  html: key
+                  }).addClass("carddeck").css("top", top.toString() + "in").appendTo( "body" );
+
+                  i++;
+                  $( "<div>", {
+                  "class": "carddeck",
+                  html: valv
+                  }).addClass("carddeck").css("top", top.toString() + "in").css("left", "3.75in").appendTo( "body" );
+                  
+              }); // val
+
+          }); // key
+        });
+        
+        </script> 
   </body>
 </html>
