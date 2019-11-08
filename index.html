@@ -14,7 +14,6 @@
         background: rgb(255,255,255);
         -webkit-print-color-adjust: exact;
         box-sizing: border-box;
-        
       }
 
       .carddeck {
@@ -25,91 +24,330 @@
         page-break-after: auto;
         margin: 0px;
         overflow: hidden;
-        background-color: grey;
+
       }
+
+      .carddeckTAIL_BPM {
+      background: 
+        radial-gradient(circle, transparent 40%, var(--color-v) 95%),
+        linear-gradient(to right, var(--color), var(--color)),
+        var(--image2);
+        background-position: center center;
+        background-size: cover;
+        background-blend-mode: 
+          var(--blend-top, normal),
+          var(--blend-bottom, color),
+          normal;
+        --image2: url(http://jonesginzel.com/wp-content/uploads/1999/01/99A-Metronome-12.jpg);
+        --color-v: black;
+        --color: gray;
+        flex: 1;
+      }
+
+      .carddeckHEAD_BPM {
+      background: 
+        radial-gradient(circle, transparent 40%, var(--color-v) 95%),
+        linear-gradient(to right, var(--color), var(--color)),
+        var(--image2);
+        background-position: center center;
+        background-size: cover;
+        background-blend-mode: 
+          var(--blend-top, normal),
+          var(--blend-bottom, overlay),
+          normal;
+        --image2: url(http://jonesginzel.com/wp-content/uploads/1999/01/99A-Metronome-12.jpg);
+        --color-v: black;
+        --color: gray; //hsla(343,100%,50%,.5);
+        flex: 1;
+        font-size: 28px;
+      }
+
+
+      .carddeckTAIL_FEEL {
+      background: 
+        radial-gradient(circle, transparent 40%, var(--color-v) 95%),
+        linear-gradient(to right, var(--color), var(--color)),
+        var(--image2);
+        background-position: center center;
+        background-size: cover;
+        background-blend-mode: 
+          var(--blend-top, normal),
+          var(--blend-bottom, color),
+          normal;
+        --image2: url(https://images.unsplash.com/photo-1562315504-0311d16f464f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80);
+        --color-v: black;
+        --color: gray;
+        flex: 1;
+      }
+
+      .carddeckHEAD_FEEL {
+      background: 
+        radial-gradient(circle, transparent 40%, var(--color-v) 95%),
+        linear-gradient(to right, var(--color), var(--color)),
+        var(--image2);
+        background-position: center center;
+        background-size: cover;
+        background-blend-mode: 
+          var(--blend-top, normal),
+          var(--blend-bottom, overlay),
+          normal;
+        --image2: url(https://images.unsplash.com/photo-1524689222688-670203109043?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1445&q=80);
+        --color-v: black;
+        --color: gray; //hsla(343,100%,50%,.5);
+        flex: 1;
+        font-size: 28px;
+      }
+
+      .carddeckTAIL_LENG {
+      background: 
+        radial-gradient(circle, transparent 40%, var(--color-v) 95%),
+        linear-gradient(to right, var(--color), var(--color)),
+        var(--image2);
+        background-position: center center;
+        background-size: cover;
+        background-blend-mode: 
+          var(--blend-top, normal),
+          var(--blend-bottom, color),
+          normal;
+        --image2: url(https://images.unsplash.com/photo-1528476186982-ee7c2469d040?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --color-v: black;
+        --color: gray;
+        flex: 1;
+      }
+
+      .carddeckHEAD_LENG {
+      background: 
+        radial-gradient(circle, transparent 40%, var(--color-v) 95%),
+        linear-gradient(to right, var(--color), var(--color)),
+        var(--image2);
+        background-position: center center;
+        background-size: cover;
+        background-blend-mode: 
+          var(--blend-top, normal),
+          var(--blend-bottom, overlay),
+          normal;
+        --image2: url(https://images.unsplash.com/photo-1528476186982-ee7c2469d040?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --color-v: black;
+        --color: gray; //hsla(343,100%,50%,.5);
+        flex: 1;
+        font-size: 28px;
+      }
+
+      .carddeckTAIL_PROG {
+      background: 
+        radial-gradient(circle, transparent 40%, var(--color-v) 95%),
+        linear-gradient(to right, var(--color), var(--color)),
+        var(--image2);
+        background-position: center center;
+        background-size: cover;
+        background-blend-mode: 
+          var(--blend-top, normal),
+          var(--blend-bottom, color),
+          normal;
+        --image2: url(https://images.unsplash.com/photo-1563723385645-5902e37ecca4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --color-v: black;
+        --color: gray;
+        flex: 1;
+      }
+
+      .carddeckHEAD_PROG {
+      background: 
+        radial-gradient(circle, transparent 40%, var(--color-v) 95%),
+        linear-gradient(to right, var(--color), var(--color)),
+        var(--image2);
+        background-position: center center;
+        background-size: cover;
+        background-blend-mode: 
+          var(--blend-top, normal),
+          var(--blend-bottom, overlay),
+          normal;
+        --image2: url(https://images.unsplash.com/photo-1563723385645-5902e37ecca4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --color-v: black;
+        --color: gray; //hsla(343,100%,50%,.5);
+        flex: 1;
+        font-size: 24px;
+      }
+
+      .carddeckTAIL_BARS {
+      background: 
+        radial-gradient(circle, transparent 40%, var(--color-v) 95%),
+        linear-gradient(to right, var(--color), var(--color)),
+        var(--image2);
+        background-position: center center;
+        background-size: cover;
+        background-blend-mode: 
+          var(--blend-top, normal),
+          var(--blend-bottom, color),
+          normal;
+        --image2: url(https://images.unsplash.com/photo-1489820941910-e3e568cf582f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --color-v: black;
+        --color: gray;
+        flex: 1;
+      }
+
+      .carddeckHEAD_BARS {
+      background: 
+        radial-gradient(circle, transparent 40%, var(--color-v) 95%),
+        linear-gradient(to right, var(--color), var(--color)),
+        var(--image2);
+        background-position: center center;
+        background-size: cover;
+        background-blend-mode: 
+          var(--blend-top, normal),
+          var(--blend-bottom, overlay),
+          normal;
+        --image2: url(https://images.unsplash.com/photo-1489820941910-e3e568cf582f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --color-v: black;
+        --color: gray; //hsla(343,100%,50%,.5);
+        flex: 1;
+        font-size: 24px;
+      }
+
+
+      .carddeckTAIL_INST {
+      background: 
+        radial-gradient(circle, transparent 40%, var(--color-v) 95%),
+        linear-gradient(to right, var(--color), var(--color)),
+        var(--image2);
+        background-position: center center;
+        background-size: cover;
+        background-blend-mode: 
+          var(--blend-top, normal),
+          var(--blend-bottom, color),
+          normal;
+        --image2: url(https://images.unsplash.com/photo-1553526171-9e305610ccdd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --color-v: black;
+        --color: gray;
+        flex: 1;
+      }
+
+      .carddeckHEAD_INST {
+      background: 
+        radial-gradient(circle, transparent 40%, var(--color-v) 95%),
+        linear-gradient(to right, var(--color), var(--color)),
+        var(--image2);
+        background-position: center center;
+        background-size: cover;
+        background-blend-mode: 
+          var(--blend-top, normal),
+          var(--blend-bottom, overlay),
+          normal;
+        --image2: url(https://images.unsplash.com/photo-1553526171-9e305610ccdd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --color-v: black;
+        --color: gray; //hsla(343,100%,50%,.5);
+        flex: 1;
+        font-size: 24px;
+      }
+
+
+
+
       
-      .page.first {
-        border-left: 5px solid green;
-      }
-
-      .bottom {
-        position: absolute;
-        left: 5mm;
-        right: 5mm;
-        bottom: 5mm;
-      }
-
-      .group {
-        margin-top: 3mm;
-      }
-
-      .line {
-        color: white;
-        position: relative;
-      }
-
-      .center {
-        text-align: center;
-      }
-
-      .logo {
-        position: relative;
-        width: 80%;
-        left: 10%;
-        top: 15%;
-      }
-
-
-      .BPM {
-        background: url(https://images.unsplash.com/photo-1567425804692-70a154bc2b8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9); 
-      }
 
 
       .BPM div {
-        font-size: 68px;
-        text-align: center;
-   -webkit-text-stroke: 1px black;
-   color: white;
-   text-shadow:
-       3px 3px 0 #000,
-     -1px -1px 0 #000,  
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-       1px 1px 0 #000;
-       
-    margin-top: 1.10in;
-}
+              font-size: 68px;
+              text-align: center;
+        -webkit-text-stroke: 1px black;
+        color: white;
+        text-shadow:
+            3px 3px 0 #000,
+          -1px -1px 0 #000,  
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+          margin-top: 1.10in;
+      }
 
-.FEELZ div {
-        font-size: 32px;
-        text-align: center;
-   -webkit-text-stroke: 1px black;
-   color: white;
-   text-shadow:
-       3px 3px 0 #000,
-     -1px -1px 0 #000,  
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-       1px 1px 0 #000;
-       
-    margin-top: 1.10in;
-}
+      .FEEL div {
+              font-size: 32px;
+              text-align: center;
+        -webkit-text-stroke: 1px black;
+        color: white;
+        text-shadow:
+            3px 3px 0 #000,
+          -1px -1px 0 #000,  
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+          margin-top: 1.10in;
+      }
+
+      .LENG div {
+              font-size: 52px;
+              text-align: center;
+        -webkit-text-stroke: 1px black;
+        color: white;
+        text-shadow:
+            3px 3px 0 #000,
+          -1px -1px 0 #000,  
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+            line-height: 0.9;
+          margin-top: 1.10in;
+      }
+
+      .PROG div {
+              font-size: 52px;
+              text-align: center;
+        -webkit-text-stroke: 1px black;
+        color: white;
+        text-shadow:
+            3px 3px 0 #000,
+          -1px -1px 0 #000,  
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+            line-height: 0.9;
+          margin-top: 1.10in;
+      }
+
+      .BARS div {
+              font-size: 52px;
+              text-align: center;
+        -webkit-text-stroke: 1px black;
+        color: white;
+        text-shadow:
+            3px 3px 0 #000,
+          -1px -1px 0 #000,  
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+            line-height: 1;
+          margin-top: 1.10in;
+      }
+
+      .INST div {
+              font-size: 52px;
+              text-align: center;
+        -webkit-text-stroke: 1px black;
+        color: white;
+        text-shadow:
+            3px 3px 0 #000,
+          -1px -1px 0 #000,  
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+            line-height: 1;
+          margin-top: 1.10in;
+      }
 
       h1 {
-        font-size: 36px;
-        text-align: center;
-   -webkit-text-stroke: 1px black;
-   color: white;
-   text-shadow:
-       3px 3px 0 #000,
-     -1px -1px 0 #000,  
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-       1px 1px 0 #000;
-    margin-top: 1.10in;
-    transform: rotate(-3deg);
-}
 
+        text-align: center;
+        -webkit-text-stroke: 1px black;
+        color: white;
+        text-shadow:
+            3px 3px 0 #000,
+          -1px -1px 0 #000,  
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+          margin-top: 1.10in;
+          transform: rotate(-3deg);
+          line-height: 1;
+      }
     </style>
   </head>
   <body>
@@ -121,7 +359,7 @@
                       "Length":[ "5<br />min", "10<br />min", "15<br />min", "20<br />min", "25<br />min", "30<br />min", "As you<br />wish"],
                       "Feelz": ["Cumbia", "Dub", "90's Acid Jazz", "Techno", "Acid", "Nouvelle planète", "Pleins pouvoirs", "Dark wave", "Deep deep house", "Drone", "Ambient", "Le soleil se lève", "Hard"],
                       "Progression<br />&<br />scale":[ "III - IV - V", "110", "140" ],
-                      "Bars<br />&<br />Tempo": ["Half BPM", "As BPM", "Double BPM", "As you wish", "1 bar", "2 bars", "4 bars"],
+                      "Bars<br />&<br />Tempo": ["Half BPM", "As BPM", "Double<br />BPM", "As you<br />wish", "1 bar", "2 bars", "4 bars"],
                       "Instrument":[ "PAD", "Brass", "Bass", "Keyboard", "Mono lead", "String", "80's synth", "Pluck", "Organ", "Sub-bass", "Aciiid!", "Marimba" ],
                       "feelz4": ["groove", "session", "fdsfds"],
                       "bpmd6":[ "80", "110", "140" ],
@@ -132,16 +370,14 @@
                       "bpmq1":[ "80", "110", "140", "80", "110", "140" ],
                     }
 
-
-
-
           var i = 0;
           var top = 0;
 
           $.each( data, function( key, val ) {
               console.log(key + " - " + val);
-
+              sk = key.substring(0, 4);
               $.each( val, function( keyv, valv ) {
+
                   if(i ==0) {
                     top += 0;
                   } else {
@@ -153,6 +389,7 @@
                   html: "<h1>" + key + "</h1>"
                   })
                   .addClass("carddeck")
+                  .addClass("carddeckHEAD_"+sk)
                   .css("top", top.toString() + "in")
                   .css("text-align", "center")
                   .appendTo( "body" );
@@ -161,7 +398,7 @@
                   $( "<div>", {
                   "class": "carddeck",
                   html: "<div>"+valv+"</div>"
-                  }).addClass("carddeck").addClass(key).css("top", top.toString() + "in").css("left", "3.75in").appendTo( "body" );
+                  }).addClass("carddeck").addClass("carddeckTAIL_"+sk).addClass(sk).css("top", top.toString() + "in").css("left", "3.75in").appendTo( "body" );
                   
               }); // val
 
