@@ -1,15 +1,17 @@
 <!--
 https://docs.google.com/spreadsheets/d/1MeciIJA0tEzB_i2NWD3322SWB4Afnl7ZBtOxfQ8Qrgs/edit#gid=0
 https://www.pianoscales.org/major.html
-add piano chord reference
-add scale reference
+https://www.pianoscales.org/printable.html
+
+add piano chords
+
+add scale ^ 
+  - add semitone transpose trick for major (play in c major scale but transpose to any major scale +1 semitone -> 11 semitone)
+  - add the same trick for minor scale only +1 from A minor for A#m +2 for Bm and -1 (G#m) to -9 (Cm)add chords (pdf)
+
 glue automation
-coller les cartes 
-3 par pages?
 checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
-<br /><div class='cp'>C major: Dm-G-C<br />D♭ major: E♭m-A♭-D♭<br />D major: Em-A-D<br />E♭ major: Fm-B♭-E♭<br />E major: F♯m-B-E<br />F major: Gm-C-F<br />F♯ major: G♯m-C♯-F♯<br />G major: Am-D-G<br />A♭ major: B♭m-E♭-A♭<br />A major: Bm-E-A<br />B♭ major: Cm-F-B♭<br />B major: C♯m-F♯-B</div>
-<br /><div class='cp'>C major: C-G-Am-F<br />D♭ major: D♭-A♭-B♭m-G♭<br />D major: D-A-Bm-G<br />E♭ major: E♭-B♭-Cm-Ab<br />E major: E-B-C♯m-A<br />F major: F-C-Dm-B♭<br />F♯ major: F♯-C♯-D♯m-B<br />G major: G-D-Em-C<br />A♭ major: A♭-E♭-Fm-D♭<br />A major: A-E-F♯m-D<br />B♭ major: B♭-F-Gm-E♭<br />B major: B-F♯-G♯m-E</div>
-<br /><div class='cp'>C major: C-F-G<br />D♭ major: D♭-G♭-A♭<br />D major: D-G-A<br />E♭ major: E♭-A♭-B♭<br />E major: E-A-B<br />F major: F-B♭-C<br />F♯ major: F♯-A♯-C<br />G major: G-C-D<br />A♭ major: A♭-D♭-E♭<br />A major: A-D-E<br />B♭ major: B♭-E♭-F<br />B major: B-E-F♯</div>
+
 -->
 <html>
   <head>
@@ -52,7 +54,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, saturation),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1512743699069-c902ad5a9191?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1512743699069-c902ad5a9191?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: green;
         flex: 1;
@@ -69,7 +71,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1564908296507-86814f9a4150?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1564908296507-86814f9a4150?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent; //hsla(343,100%,50%,.5);
         flex: 1;
@@ -88,7 +90,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1542571294-a95364a55157?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1542571294-a95364a55157?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent;
         flex: 1;
@@ -105,7 +107,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1524689222688-670203109043?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1524689222688-670203109043?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent; //hsla(343,100%,50%,.5);
         flex: 1;
@@ -123,7 +125,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1541726260-e6b6a6a08b27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1541726260-e6b6a6a08b27?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent;
         flex: 1;
@@ -140,7 +142,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1530447920184-b88c8872?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1530447920184-b88c8872?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent; //hsla(343,100%,50%,.5);
         flex: 1;
@@ -158,7 +160,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1518109178043-b48e6e3d61b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1518109178043-b48e6e3d61b5?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent;
         flex: 1;
@@ -175,7 +177,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1564090349503-b28516da3b57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1564090349503-b28516da3b57?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent; //hsla(343,100%,50%,.5);
         flex: 1;
@@ -193,7 +195,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1564544925436-18ea04c6d43f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1564544925436-18ea04c6d43f?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent;
         flex: 1;
@@ -210,7 +212,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1474471981552-e3084590b868?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1474471981552-e3084590b868?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent; //hsla(343,100%,50%,.5);
         flex: 1;
@@ -228,7 +230,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1568639837178-c794256b9b98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1568639837178-c794256b9b98?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent;
         flex: 1;
@@ -245,7 +247,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1550434605-d1a3cb21158e?ixlib=rb-1.2.1);
+        --image2: url(https://images.unsplash.com/photo-1550434605-d1a3cb21158e?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent; //hsla(343,100%,50%,.5);
         flex: 1;
@@ -264,7 +266,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1557841595-c1d3adca02c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1557841595-c1d3adca02c9?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent;
         flex: 1;
@@ -281,7 +283,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1550532422-378e93ec379c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&format=auto);
+        --image2: url(https://images.unsplash.com/photo-1550532422-378e93ec379c?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9&format=auto);
         --color-v: black;
         --color: transparent; //hsla(343,100%,50%,.5);
         flex: 1;
@@ -299,7 +301,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1564166174574-a9666f590437?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1564166174574-a9666f590437?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent;
         flex: 1;
@@ -316,7 +318,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1511909938134-66234e1aa5c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1511909938134-66234e1aa5c9?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent; //hsla(343,100%,50%,.5);
         flex: 1;
@@ -351,7 +353,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1544395313-531de489b105?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1544395313-531de489b105?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent; //hsla(343,100%,50%,.5);
         flex: 1;
@@ -369,7 +371,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1500100586562-f75ff6540087?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1500100586562-f75ff6540087?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent;
         flex: 1;
@@ -386,7 +388,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1518152006812-edab29b069ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1518152006812-edab29b069ac?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent; //hsla(343,100%,50%,.5);
         flex: 1;
@@ -404,7 +406,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1569227845710-a2b963783d6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1569227845710-a2b963783d6e?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent;
         flex: 1;
@@ -421,7 +423,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1520545977526-cf45eacc42fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1520545977526-cf45eacc42fe?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent; //hsla(343,100%,50%,.5);
         flex: 1;
@@ -439,7 +441,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1430933964450-0aefb85717c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1430933964450-0aefb85717c8?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent;
         flex: 1;
@@ -457,7 +459,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1550080504-23ee82e9a4de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+        --image2: url(https://images.unsplash.com/photo-1550080504-23ee82e9a4de?ixlib=rb-1.2.1&w=1800&ixid=eyJhcHBfaWQiOjEyMDd9);
         --color-v: black;
         --color: transparent; //hsla(343,100%,50%,.5);
         flex: 1;
@@ -480,6 +482,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
             1px 1px 0 #000;
           margin-top: 0.64in;
           font-family: 'Cousine';
+          line-height: 1em;
       }
 
       .FEEL div {
@@ -546,7 +549,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
       }
 
       .PLAY div {
-              font-size: 48px;
+              font-size: 36px;
               text-align: center;
 
         color: white;
@@ -557,12 +560,12 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
             -1px 1px 0 #000,
             1px 1px 0 #000;
             line-height: 1;
-          margin-top: 1.10in;
+          margin-top: 1.15in;
           font-family: 'Cousine';
       }
 
       .INST div {
-              font-size: 48px;
+              font-size: 36px;
               text-align: center;
 
         color: white;
@@ -573,12 +576,12 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
             -1px 1px 0 #000,
             1px 1px 0 #000;
             line-height: 1;
-          margin-top: 1.10in;
+          margin-top: 0.83in;
           font-family: 'Cousine';
       }
 
       .DRUM div {
-              font-size: 42px;
+              font-size: 36px;
               text-align: center;
 
         color: white;
@@ -594,7 +597,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
       }
 
       .FX div {
-              font-size: 38px;
+              font-size: 36px;
               text-align: center;
 
         color: white;
@@ -610,7 +613,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
       }
 
       .SAMP div {
-              font-size: 48px;
+              font-size: 36px;
               text-align: center;
 
         color: white;
@@ -621,7 +624,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
             -1px 1px 0 #000,
             1px 1px 0 #000;
             line-height: 1;
-          margin-top: 1.10in;
+          margin-top: 0.6in;
           font-family: 'Cousine';
       }
 
@@ -642,7 +645,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
       }
 
       .SPEC div {
-              font-size: 38px;
+              font-size: 32px;
               text-align: center;
 
         color: white;
@@ -652,12 +655,12 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
             1px -1px 0 #000,
             -1px 1px 0 #000,
             1px 1px 0 #000;
-            line-height: 1;
+            line-height: 1.2;
           margin-top: 1.10in;
           padding-left: 20px;
           padding-right: 20px;
           font-family: 'Cousine';
-          word-spacing: -11px;
+          word-spacing: -6px;
                }
 
      
@@ -696,28 +699,28 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
     </style>
   </head>
   <body>
-      <hr style="border: 1px dashed orange; position: absolute; left:0.39in; height: 761.25in; z-index: 100; margin-left: -0.2in; margin-top: -0.4in" />
-      <hr style="border: 1px dashed orange; position: absolute; left:3.56in; height: 761.25in; z-index: 100; margin-left: -0.2in; margin-top: -0.4in" />
-      <hr style="border: 1px dashed orange; position: absolute; left:3.93in; height: 761.25in; z-index: 100; margin-left: -0.2in; margin-top: -0.4in" />
-      <hr style="border: 1px dashed orange; position: absolute; left:7.12in; height: 761.25in; z-index: 100; margin-left: -0.2in; margin-top: -0.4in" />
+      <hr style="border: 1px dashed orange; position: absolute; left:0.39in; height: 765.5in; z-index: 100; margin-left: -0.2in; margin-top: -0.4in" />
+      <hr style="border: 1px dashed orange; position: absolute; left:3.56in; height: 765.5in; z-index: 100; margin-left: -0.2in; margin-top: -0.4in" />
+      <hr style="border: 1px dashed orange; position: absolute; left:3.93in; height: 765.5in; z-index: 100; margin-left: -0.2in; margin-top: -0.4in" />
+      <hr style="border: 1px dashed orange; position: absolute; left:7.12in; height: 765.5in; z-index: 100; margin-left: -0.2in; margin-top: -0.4in" />
       
-    
+      
         <script>
         $( document ).ready(function() {
 
           var data={
-                      "BPM":[ "66.6", "70", "80", "90", "95", "100", "105", "110", "120", "130", "140", "150", "160", "180", "Random" ],
+                      "BPM":[ "66.6", "70", "80", "90", "95", "100", "105", "110", "120", "130", "140", "150", "160", "180", "Random", "As you<br />wish" ],
                       "Length":[ "5<br />min", "10<br />min", "15<br />min", "20<br />min", "25<br />min", "30<br />min", "As you<br />wish"],
                       "Feelz": ["Cumbia", "Dub", "Techno", "Acid", "Lo-fi hip hop", "Drum & bass", "Dark wave", "Deep house", "Drone", "Experimental", "Ambient", "Disco", "Hard", "Free jazz", "Funk", "House", "Breakbeat", "Dancehall"],
                       "Progression":[ "ii–V–I", "I–V–vi–IV", "I-IV-V" ],
-                      "Key":[ "C", "D♭", "D", "E♭", "E", "F", "F♯", "G", "A♭", "A", "B♭", "B" ],
+                      "Key":[ "C", "C♯", "D", "D♯", "E", "F", "F♯", "G", "G♯", "A", "A♯", "B" ],
                       "Playhead": ["Half BPM", "As BPM", "Double<br />BPM", "As you<br />wish", "1 bar", "2 bars", "4 bars", "8 bars", "16 bars"],
-                      "Instrument":[ "PAD", "Brass", "Bass", "Keyboard", "Mono lead", "String", "80's synth", "Pluck", "Organ", "Sub-bass", "Aciiid!", "Marimba", "As you<br />wish" ],
-                      "Drum": ["Bass drum", "Snare", "Hi-hat", "Ride", "Low Tom", "High Tom", "Clap", "Rim shot", "Crash", "Cow bell", "Triangle", "Agogo", "Shaker", "Tambourine", "Trial & error"],
+                      "Instrument":[ "PAD", "Brass", "Bass", "Keyboard", "Mono lead", "String", "80's synth", "Pluck", "Organ", "Sub-bass", "Aciiid!", "Marimba", "As you<br />wish", "Random" ],
+                      "Drum": ["Bass drum", "Snare", "Hi-hat", "Ride", "Low Tom", "High Tom", "Clap", "Rim shot", "Crash", "Cow bell", "Triangle", "Agogo", "Shaker", "Tambourine", "As you<br />wish"],
                       "FX":[ "Delay", "Reverb" ,"Distortion" ,"Ring modulator" ,"Chorus" ,"Flanger" ,"Pitch<br />shifter" ,"Tremolo" ,"Vibrato", "Phaser", "Gate", "As you<br />wish" ],
-                      "Sample":[ "Birds", "Control tower", "Cats", "Quote films", "Kitchen", "Ringing bell", "Car", "Arcade", "Rocket", "Firework", "Rain", "Whistle", "Howling", "Frog", "Huard" ],
+                      "Sample":[ "Birds", "Control tower", "Cats", "Mother<br />Nature", "Kitchen", "Ringing bell", "Car", "Arcade", "Rocket", "Firework", "Rain", "Howling", "Frog", "Le<br />Huard" ],
                       "Master":[ "High only", "Mid only", "Bass only", "Bandpass", "Flat", "Pan left", "Pan right", "Automation", "Crescendo", "Diminuendo", "Pianissimo", "Fortissimo",  "As you<br />wish", "As you<br />wish" ],
-                      "Special": ["Play your favorite track", "Tweak the console:<br />mute, eq, pan, volume", "Switch place with anyone", "Adjust lighting", "MC<br /><span style='font-size: 22px;'>(microphone)</span>", "Round table soundcheck", "Beat-boxing or humming", "Mode random", "A bit of music theory", "A bit of machine technic", "Draw a<br />card from:<br />Progression", "Draw a<br />card from:<br />Key", "Pick an instrument<br />from the analog box", "Conductor:<br />who, what, how long", "Draw a<br />card from:<br />Feelz", "Glissando<br />party"],
+                      "Special": ["Play your favorite track", "Tweak the console:<br /><span style='font-size: 22px;'>mute | eq | pan | vol</span>", "Switch place with anyone", "Adjust ambience", "MC<br /><span style='font-size: 22px;'>(microphone)</span>", "Round table soundcheck", "Beat-boxing or humming", "Mode random", "A bit of music theory", "A bit of machine technic", "Draw a<br />card from:<br /><span style='font-size: 36px; color:#f17c6e;'>Progression</span>", "Draw a<br />card from:<br /><span style='font-size: 36px; color:#f17c6e;'>Key</span>", "Pick an instrument<br />from the analog box", "Conductor:<br /><span style='font-size: 22px;'>who | what | how long</span>", "Draw a<br />card from:<br /><span style='font-size: 36px; color:#f17c6e;'>Feelz</span>", "Glissando<br />party"],
                     }
 
 
@@ -734,7 +737,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
                   if(i ==0) {
                     top += 0;
                   } else {
-                    top += 5.11; 
+                    top += 5.105; 
                   }
 
                   i++;
@@ -763,6 +766,14 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
               }); // val
 
           }); // key
+
+
+
+          $( "<div>", {
+                  html: ""
+                  })
+                 
+                  .appendTo( "body" );
           
         });
         
