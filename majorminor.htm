@@ -31,6 +31,7 @@ html, body {
         font-size: 24px;
 padding-left: 20px;
 padding-right: 20px;
+text-align: center;
 	}
 .small{
 
@@ -50,7 +51,7 @@ padding-right: 20px;
           var(--blend-top, normal),
           var(--blend-bottom, normal),
           normal;
-        --image2: url(https://images.unsplash.com/photo-1547366785-564103df7e13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=595);
+        --image2: url(https://images.unsplash.com/photo-1500916389037-576ad85790dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=824&q=80);
         --color-v: black;
         --color: transparent;
         flex: 1;
@@ -62,7 +63,7 @@ img {
 box-shadow: 0px 0px 2px 4px orange;
 	margin-top: 37px;
 	-webkit-filter: hue-rotate(90deg);
-  filter: hue-rotate(170deg);
+  filter: hue-rotate(360deg);
 
 }
 </style>
@@ -73,11 +74,11 @@ box-shadow: 0px 0px 2px 4px orange;
 
 <tbody>
 		<tr>
-				<td class="black"></td>
+				<td class="black" style="padding-top: 20px;"><span style="font-size: 12px; padding-top: 20px;">Note<br /><span style="font-size: 10px;">Semitone</span><br />C</span></td>
 				<td style="text-align: center;padding-top: 20px; font-size: 36px;font-family: 'Courgette', cursive;">Major</td>
 				<td>&nbsp;</td>
 				<td style="text-align: center;padding-top: 20px; font-size: 36px; font-family: 'Courgette', cursive;">Minor</td>
-				<td class="black"></td>
+				<td class="black" style="padding-top: 20px;"><span style="font-size: 12px; padding-top: 20px;">Note<br />Semitone<br />Am</span></td>
 				</tr>
 	
 	
@@ -86,51 +87,60 @@ box-shadow: 0px 0px 2px 4px orange;
 <td><img src="./majorminor_files/C.png" width="301" height="95"></td>
 <td>&nbsp;</td>
 <td><img src="./majorminor_files/Cm.png" width="301" height="95"></td>
-<td class="black">Cm</td>
+<td class="black">Cm<br /><span style="font-size: 18px;">-9</span></td>
 </tr>
 <tr>
-<td class="black">C#</td>
+<td class="black">C#<br /><span style="font-size: 18px;">+1</span></td>
 <td><img src="./majorminor_files/Db.png" width="301" height="95"></td>
 <td>&nbsp;</td>
 <td><img src="./majorminor_files/Dbm.png" width="301" height="95"></td>
-<td class="black">C#m</td>
+<td class="black">C#m<br /><span style="font-size: 18px;">-8</span></td>
 </tr>
 <tr>
-<td class="black">D</td>
+<td class="black">D<br /><span style="font-size: 18px;">+2</span></td>
 <td><img src="./majorminor_files/D.png" width="301" height="95"></td>
 <td>&nbsp;</td>
 <td><img src="./majorminor_files/Dm.png" width="301" height="95"></td>
-<td class="black">Dm</td>
+<td class="black">Dm<br /><span style="font-size: 18px;">-7</span></td>
 </tr>
 <tr>
-<td class="black">D#</td>
+<td class="black">D#<br /><span style="font-size: 18px;">+3</span></td>
 <td><img src="./majorminor_files/Eb.png" width="301" height="95"></td>
 <td>&nbsp;</td>
 <td><img src="./majorminor_files/Ebm.png" width="301" height="95"></td>
-<td class="black">D#m</td>
+<td class="black">D#m<br /><span style="font-size: 18px;">-6</span></td>
 </tr>
 <tr>
-<td class="black">E</td>
+<td class="black">E<br /><span style="font-size: 18px;">+4</span></td>
 <td><img src="./majorminor_files/E.png" width="301" height="95"></td>
 <td>&nbsp;</td>
 <td><img src="./majorminor_files/Em.png" width="301" height="95"></td>
-<td class="black">Em</td>
+<td class="black">Em<br /><span style="font-size: 18px;">-5</span></td>
 </tr>
 <tr>
-<td class="black">F</td>
+<td class="black">F<br /><span style="font-size: 18px;">+5</span></td>
 <td><img src="./majorminor_files/F.png" width="301" height="95"></td>
 <td>&nbsp;</td>
 <td><img src="./majorminor_files/Fm.png" width="301" height="95"></td>
-<td class="black">Fm</td>
+<td class="black">Fm<br /><span style="font-size: 18px;">-4</span></td>
 </tr>
 <tr>
-<td class="black">F#</td>
+<td class="black">F#<br /><span style="font-size: 18px;">+6</span></td>
 <td><img src="./majorminor_files/Gb.png" width="301" height="95"></td>
 <td>&nbsp;</td>
 <td><img src="./majorminor_files/Gbm.png" width="301" height="95"></td>
-<td class="black">F#m</td>
+<td class="black">F#m<br /><span style="font-size: 18px;">-3</span></td>
 </tr>
+<tr>
+        <td class="black" style="padding-top: 54px;"></td>
+        <td style="text-align: center;padding-top: 20px; font-size: 36px;font-family: 'Courgette', cursive;"></td>
+        <td>&nbsp;</td>
+        <td style="text-align: center;padding-top: 20px; font-size: 36px; font-family: 'Courgette', cursive;"></td>
+        <td class="black" style="padding-top: 54px;"></td>
+        </tr>
 
+
+<tr>
 </tbody></table>
 
 <script>

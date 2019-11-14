@@ -12,6 +12,22 @@ add scale ^
 glue automation
 checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
 
+add instruction:
+
+Jam rules
+
+1. Someone draw a card from the "Special" deck
+- if the card is "Progression", you need to draw one card from "Key" and one card from "Progression"
+- if the card is "Feelz", draw a card from the "Feelz" deck
+
+2. Draw a card from "BPM" and "Length", announce the good new (15 min at 90 BPM) or the bad news (30 min at 180 BPM)
+3. Each players draw a card from all the categories (but not Feelz, Progression, Key, Special)
+4. Do your best
+
+Credits:
+Original concept by: Camille Jacques & Yann Malo
+True original concept from a dream: Me aka I aka Myself
+
 -->
 <html>
   <head>
@@ -61,6 +77,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
       }
 
       .carddeckHEAD_BPM {
+        color: white !important;
       background: 
         radial-gradient(circle, transparent 40%, var(--color-v) 95%),
         linear-gradient(to right, var(--color), var(--color)),
@@ -97,6 +114,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
       }
 
       .carddeckHEAD_FEEL {
+        color: orange !important;
       background: 
         radial-gradient(circle, transparent 40%, var(--color-v) 95%),
         linear-gradient(to right, var(--color), var(--color)),
@@ -132,6 +150,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
       }
 
       .carddeckHEAD_LENG {
+        color: white !important;
       background: 
         radial-gradient(circle, transparent 40%, var(--color-v) 95%),
         linear-gradient(to right, var(--color), var(--color)),
@@ -167,6 +186,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
       }
 
       .carddeckHEAD_PROG {
+        color: orange !important;
       background: 
         radial-gradient(circle, transparent 40%, var(--color-v) 95%),
         linear-gradient(to right, var(--color), var(--color)),
@@ -202,6 +222,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
       }
 
       .carddeckHEAD_KEY {
+        color: orange !important;
       background: 
         radial-gradient(circle, transparent 40%, var(--color-v) 95%),
         linear-gradient(to right, var(--color), var(--color)),
@@ -237,6 +258,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
       }
 
       .carddeckHEAD_PLAY {
+        color: white !important;
       background: 
         radial-gradient(circle, transparent 40%, var(--color-v) 95%),
         linear-gradient(to right, var(--color), var(--color)),
@@ -273,6 +295,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
       }
 
       .carddeckHEAD_INST {
+        color: white !important;
       background: 
         radial-gradient(circle, transparent 40%, var(--color-v) 95%),
         linear-gradient(to right, var(--color), var(--color)),
@@ -308,6 +331,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
       }
 
       .carddeckHEAD_DRUM {
+        color: white !important;
       background: 
         radial-gradient(circle, transparent 40%, var(--color-v) 95%),
         linear-gradient(to right, var(--color), var(--color)),
@@ -343,6 +367,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
       }
 
       .carddeckHEAD_FX {
+        color: white !important;
       background: 
         radial-gradient(circle, transparent 40%, var(--color-v) 95%),
         linear-gradient(to right, var(--color), var(--color)),
@@ -378,6 +403,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
       }
 
       .carddeckHEAD_SAMP {
+        color: white !important;
       background: 
         radial-gradient(circle, transparent 40%, var(--color-v) 95%),
         linear-gradient(to right, var(--color), var(--color)),
@@ -413,6 +439,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
       }
 
       .carddeckHEAD_MAST {
+        color: white !important;
       background: 
         radial-gradient(circle, transparent 40%, var(--color-v) 95%),
         linear-gradient(to right, var(--color), var(--color)),
@@ -448,6 +475,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
       }
 
       .carddeckHEAD_SPEC {
+        color: orange !important;
       background: 
         radial-gradient(circle, transparent 40%, var(--color-v) 95%),
         linear-gradient(to right, var(--color), var(--color)),
@@ -656,7 +684,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
             -1px 1px 0 #000,
             1px 1px 0 #000;
             line-height: 1.2;
-          margin-top: 1.10in;
+          margin-top: 0.7in;
           padding-left: 20px;
           padding-right: 20px;
           font-family: 'Cousine';
@@ -669,8 +697,7 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
       h1 {
 
         text-align: center;
-        
-        color: white;
+
         text-shadow:
        3px 3px 0 #000,
      -1px -1px 0 #000,  
@@ -699,10 +726,10 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
     </style>
   </head>
   <body>
-      <hr style="border: 1px dashed orange; position: absolute; left:0.39in; height: 765.5in; z-index: 100; margin-left: -0.2in; margin-top: -0.4in" />
-      <hr style="border: 1px dashed orange; position: absolute; left:3.56in; height: 765.5in; z-index: 100; margin-left: -0.2in; margin-top: -0.4in" />
-      <hr style="border: 1px dashed orange; position: absolute; left:3.93in; height: 765.5in; z-index: 100; margin-left: -0.2in; margin-top: -0.4in" />
-      <hr style="border: 1px dashed orange; position: absolute; left:7.12in; height: 765.5in; z-index: 100; margin-left: -0.2in; margin-top: -0.4in" />
+      <hr style="border: 1px dashed orange; position: absolute; left:0.39in; height: 771in; z-index: 100; margin-left: -0.2in; margin-top: -0.4in" />
+      <hr style="border: 1px dashed orange; position: absolute; left:3.56in; height: 771in; z-index: 100; margin-left: -0.2in; margin-top: -0.4in" />
+      <hr style="border: 1px dashed orange; position: absolute; left:3.93in; height: 771in; z-index: 100; margin-left: -0.2in; margin-top: -0.4in" />
+      <hr style="border: 1px dashed orange; position: absolute; left:7.12in; height: 771in; z-index: 100; margin-left: -0.2in; margin-top: -0.4in" />
       
       
         <script>
@@ -718,9 +745,9 @@ checker la console et le chiffre / 4 = nombre de page et *0.40 le prix
                       "Instrument":[ "PAD", "Brass", "Bass", "Keyboard", "Mono lead", "String", "80's synth", "Pluck", "Organ", "Sub-bass", "Aciiid!", "Marimba", "As you<br />wish", "Random" ],
                       "Drum": ["Bass drum", "Snare", "Hi-hat", "Ride", "Low Tom", "High Tom", "Clap", "Rim shot", "Crash", "Cow bell", "Triangle", "Agogo", "Shaker", "Tambourine", "As you<br />wish"],
                       "FX":[ "Delay", "Reverb" ,"Distortion" ,"Ring modulator" ,"Chorus" ,"Flanger" ,"Pitch<br />shifter" ,"Tremolo" ,"Vibrato", "Phaser", "Gate", "As you<br />wish" ],
-                      "Sample":[ "Birds", "Control tower", "Cats", "Mother<br />Nature", "Kitchen", "Ringing bell", "Car", "Arcade", "Rocket", "Firework", "Rain", "Howling", "Frog", "Le<br />Huard" ],
+                      "Sample":[ "Birds", "Control<br />tower", "Cats", "Mother<br />Nature", "Kitchen", "Ringing<br />bell", "Car", "Arcade", "Rocket", "Firework", "Rain", "Howling", "Frog", "Le<br />Huard" ],
                       "Master":[ "High only", "Mid only", "Bass only", "Bandpass", "Flat", "Pan left", "Pan right", "Automation", "Crescendo", "Diminuendo", "Pianissimo", "Fortissimo",  "As you<br />wish", "As you<br />wish" ],
-                      "Special": ["Play your favorite track", "Tweak the console:<br /><span style='font-size: 22px;'>mute | eq | pan | vol</span>", "Switch place with anyone", "Adjust ambience", "MC<br /><span style='font-size: 22px;'>(microphone)</span>", "Round table soundcheck", "Beat-boxing or humming", "Mode random", "A bit of music theory", "A bit of machine technic", "Draw a<br />card from:<br /><span style='font-size: 36px; color:#f17c6e;'>Progression</span>", "Draw a<br />card from:<br /><span style='font-size: 36px; color:#f17c6e;'>Key</span>", "Pick an instrument<br />from the analog box", "Conductor:<br /><span style='font-size: 22px;'>who | what | how long</span>", "Draw a<br />card from:<br /><span style='font-size: 36px; color:#f17c6e;'>Feelz</span>", "Glissando<br />party"],
+                      "Special": ["Play your favorite track", "Tweak the console:<br /><span style='font-size: 22px;'>mute | eq | pan | vol</span>", "Switch place with anyone", "Adjust ambience", "MC<br /><span style='font-size: 22px;'>(microphone)</span>", "Round table soundcheck", "Beat-boxing or humming", "A bit of music theory", "A bit of machine technic", "Draw a<br />card from:<br /><span style='font-size: 36px; color:orange;'>Progression</span>", "Draw a<br />card from:<br /><span style='font-size: 36px; color:orange;'>Key</span>", "Pick an instrument<br />from the analog box", "Conductor:<br /><span style='font-size: 22px;'>who | what | how long</span>", "Draw a<br />card from:<br /><span style='font-size: 36px; color:orange;'>Feelz</span>", "Glissando<br />party", "Tuning in<br />432hz", "Microtonal<br />baby"],
                     }
 
 
